@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.6s;
+}
+
+a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.navlist{
+    width: 100%;
+    padding: 5px 10vw;
+    position: fixed;
+    background: rgba(18, 18, 39, 0.9);
+    z-index: 10;
+}
+.navlist ul{
+    display: flex;
+    list-style: none;
+}
+.navlist ul li:first-child{
+    flex: 1;
+}
+.navlist h4{
+    color: #fff;
+}
+.navlist ul a{
+    margin-left: 20px;
+}
+.navlist ul a:hover{
+    color: #f80;
+}
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    height: 80vh;
+    padding-top: 30vh;
+    background-image: linear-gradient(#000000c3,#000000c3),url(../DCS3003/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:white
+}
+.container h1{
+margin-bottom: 20px;
+word-spacing: 5px;
+}
+.container p{
+margin-bottom: 30px;
+letter-spacing: 2px;
+}
+.container button{
+padding: 10px;
+background:none;
+border: 1px solid #f80;
+color: #fff;
+}
+.container button:hover{
+    background:#f80
+}
+
+/* CONTENT-BOX */
+
+.content-box{
+    width: 80%;
+    margin: auto;
+}
+.content-box>h2{
+    text-align: center;
+    color: #f80;
+    margin: 20px;
+}
+.content-box>h2::before, .content-box>h2::after{
+    content: "------";
+    letter-spacing: -5px;
+    margin: 0 10px;
+}
+.content-box .row{
+    display: flex;
+    justify-content: space-between;
+}
+.content-box .column{
+    width: 32%;
+    height: auto;
+    position: relative;
+}
+.content-box img{
+    width: 100%;
+    height: 100%;
+}
+.content-box .column a:last-child{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    background: #ff8800c3;
+    text-align: center;
+    line-height: 20vw;
+    font-size: 3vw;
+}
+.content-box .column:hover a:last-child{
+    height: 100%;
+    top: 0;
+}
+
+@media (max-width: 700px){
+    .content-box .row{
+        flex-direction: column;
+    }
+    .content-box .column{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .content-box .column a:last-child{
+        line-height: 40vw;
+        font-size: 6vw;
+    }
+}
+
+/*---------footer-------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*----- course -----*/
+
+.courses{
+    width: 100%;
+    height: 80vh;
+    padding-top: 30vh;
+    background-image: linear-gradient(#000000c3,#000000c3),url(../DCS3003/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:white
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*----- academic calender -----*/
+
+.calender{
+    width: 100%;
+    height: 80vh;
+    padding-top: 30vh;
+    background-image: linear-gradient(#000000c3,#000000c3),url(../DCS3003/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:white
+}
+
+/*----- call to action -----*/
+
+.cta{
+    width: 100%;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../DCS3003/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 10px;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.cta button{
+    padding: 10px;
+    background:none;
+    border: 1px solid #f80;
+    color: #fff;
+    }
+.cta button:hover{
+    background:#f80
+}
+
+.table{
+    margin: auto;
+    display: table;
+    width: 640px;
+    border: 2px solid black;
+}
+.table .row{
+    display: table-row;
+}
+.table .row .cell{
+    display: table-cell;
+    padding:10px;
+    border: 2px solid black;
+}
+
+/*-------- contact us page --------*/
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 10% 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 90%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col button{
+    padding: 10px;
+    background:none;
+    border: 1px solid #f80;
+    color: #000;
+    margin: 10pxS;
+    }
+.contact-col button:hover{
+    background:#f80
+}
+.contact-col input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/*-------about-------*/
+.about{
+    margin-left: 25%;
+    margin-top: 20px;
+}
+.about img{
+    width: 65%;
+    height: 30%;
+}
