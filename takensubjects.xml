@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<catalog>
+   <takensubjects id="sub101">
+      <studyday>Monday</studyday>
+      <studytime>9:00 - 11:00 AM</studytime>
+      <Subjectcode>DCS 4103</Subjectcode>
+      <Subjectname>Operating Systems</Subjectname>
+      <lecturer>Ms Nadia</lecturer>
+   </takensubjects>
+   <takensubjects id="sub102">
+      <studyday>Tuesday</studyday>
+      <studytime>9:00 - 11:00 AM</studytime>
+      <Subjectcode>DCS 3003</Subjectcode>
+      <Subjectname>Website Design</Subjectname>
+      <lecturer>Ms Teo</lecturer>
+   </takensubjects>
+   <takensubjects id="sub103">
+      <studyday>Tuesday</studyday>
+      <studytime>11:15 - 1:15 PM</studytime>
+      <Subjectcode>MST 1003</Subjectcode>
+      <Subjectname>Algebra and Calculus</Subjectname>
+      <lecturer>Ms Zarizza</lecturer>
+   </takensubjects>
+</catalog>

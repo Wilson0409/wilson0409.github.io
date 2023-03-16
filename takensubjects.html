@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Load Subjects Taken</title></head>
+<body topmargin=50 leftmargin=50>
+<div id='content'>
+<table id="takensubjects" cellpadding="10px" style="text-align:left;" border=1>
+	
+<caption><font style="font-family:Georgia;font-size:20px;font-weight: bold;">
+Subjects Taken 2023 January Semester</font></caption>
+	
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Subject Code</th>
+<th>Subject Name</th>
+<th>Lecturer</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script>
+let xmlContent = '';
+let tabletakensubjects = document.getElementById('takensubjects');
+fetch('takensubjects.xml').then((response) => {
+response.text().then((xml) => {
+xmlContent = xml;
+let parser = new DOMParser();
+let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+let takensubjects = xmlDOM.querySelectorAll('takensubjects');
+
+takensubjects.forEach(bookXmlNode => {
+let row = document.createElement('tr');
+
+//studyday
+let td = document.createElement('td');
+td.innerText = bookXmlNode.children[0].innerHTML;
+row.appendChild(td);
+
+//studytime
+let td2 = document.createElement('td');
+td2.innerText = bookXmlNode.children[1].innerHTML;
+row.appendChild(td2);
+
+//subjectcode
+let td3 = document.createElement('td');
+td3.innerText = bookXmlNode.children[2].innerHTML;
+row.appendChild(td3);
+
+//subjectname
+let td4 = document.createElement('td');
+td4.innerText = bookXmlNode.children[3].innerHTML;
+row.appendChild(td4);
+
+//lecturer
+let td5 = document.createElement('td');
+td5.innerText = bookXmlNode.children[4].innerHTML;
+row.appendChild(td5);
+
+tabletakensubjects .children[1].appendChild(row);
+
+});
+});
+});
+</script>
+</body>
+</html>
