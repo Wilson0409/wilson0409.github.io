@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comfy Guard</title>
+        <link rel="stylesheet" href="ComfyGuard.css"> <!--link to css-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="ComfyGuardLogo.jpg" type="image/jpg">
+        <script>
+            function validateForm() {
+              // to validate text - do not allow empty
+              let x = document.MyFirstForm.username.value;
+              if (x == "") {
+                alert("Please provide your Name!");
+                return false;
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <header><!--header-->
+            <div class="nav container">
+                <h4 style="font-size:xx-large;">Comfy Guard</h4>
+                <a style="font-size: x-large;" href="Home.html" target="_self">HOME</a>
+                <a style="font-size: x-large;" href="Product.html" target="_self">PRODUCT</a>
+                <a style="font-size: x-large;" href="ContactUs.html" target="_self">CONTACT US</a>
+                <a style="font-size: x-large;" href="About Us.html" target="_self">ABOUT</a>
+            </div>
+        </header>
+        <br><br><br>
+        <!-- ---call to action -------->
+        <section class="cta">
+            <h1>Visit Our Store To Know more</h1>
+            <button><a href="mailto:wilsonong04@icloud.com">CONTACT US</a></button>
+        </section>
+        <!--------- contact us -------->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.2861605165235!2d103.75473537482978!3d1.5879140983972755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6fc7e3ab9b1f%3A0x43e6c58385d91ed9!2sEco%20Palladium!5e0!3m2!1szh-CN!2smy!4v1689785424492!5m2!1szh-CN!2smy"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <h7>Location of Our Store:</h7>
+                        <p>Jalan Ekoflora 1, 81100 Johor Bahru, Johor, Malaysia</p>
+                    </div>
+                    <div>
+                        <h7>Number To Contact Us:</h7>
+                        <p>+60 146182598</p>
+                    </div>
+                    <div>
+                        <h7>Our Email Address:</h7>
+                        <p>comfyguard@gamil.com</p>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form name="MyFirstForm" onsubmit="return validateForm()">
+                        <input type="text" name="username" placeholder="Enter Your Name">
+                        <input type="email" name="useremail" placeholder="Enter Your Email" required>
+                        <input type="text" placeholder="Enter Your Message" required>
+                        <button type="submit" class="contact-col">Send It</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
