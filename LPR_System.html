@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pi Plate LPR System</title>
+  <script src="LPR_System.js"></script>
+  <link rel="stylesheet" href="LPR_System.css" />
+  <link rel="icon" href="PiPlate.png" type="image/jpg">
+</head>
+<body>
+    <header>
+        <img src="PiPlate.png" alt="PiPlate Logo" />
+        <h1>Pi Plate LPR System</h1>
+    </header>  
+  <section class="video">
+    <h2>Introduction Video</h2>
+    <video id="introVideo" controls muted>
+        <source src="Pi_Plate_Introduction_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>      
+    <p style="text-align:center;"><i>Reminder: Turn up your volume for a better watching experience.</p>
+  </section>
+
+  <section class="intro">
+    <h2>System Overview</h2>
+    <p>
+      This License Plate Recognition (LPR) system is a smart solution developed using the Raspberry Pi 5. It is designed to automatically detect, read, and record vehicle license plate numbers in real time. The system captures images through the Camera Module 2, processes the data using OpenCV for image handling, and applies Tesseract OCR to extract characters from the license plate. Recognized plate numbers are displayed on a P10 LED panel and uploaded to a cloud-based database for storage and remote access.
+    </p>
+
+    <div class="overview-box">
+      <div class="overview-item">
+        <h3>Hardware Used</h3>
+        <ul>
+          <li>Raspberry Pi 5 8 GB RAM</li>
+          <li>Raspberry Pi 8MP Camera Module V2</li>
+          <li>Adafruit RGB Matrix HAT</li>
+          <li>P10 LED Display Panel</li>
+        </ul>
+      </div>
+
+      <div class="overview-item">
+        <h3>Software & Libraries</h3>
+        <ul>
+          <li>Python</li>
+          <li>OpenCV</li>
+          <li>Tesseract OCR</li>
+          <li>MySQL (Cloud Database)</li>
+          <li>HTML, CSS, JavaScript (for Web Interface)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="poster">
+    <h2>Project Poster</h2>
+    <img src="LPR_System.png" alt="LPR Poster" />
+  </section>
+
+  <footer>
+    © 2025 Pi Plate LPR System | Developed for Final Year Project
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
